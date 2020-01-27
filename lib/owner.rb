@@ -35,7 +35,7 @@ class Owner
 
   def buy_cat(cat_name)
     owner = self
-    new_cat = Cat.new(cat_name, owner)
+    Cat.new(cat_name, owner)
   end
 
 
