@@ -38,8 +38,7 @@ class Owner
     new_cat.owner = self
   end
 
-  _Make a new instance of the appropriate pet, initializing it with that name
-    and the owner who is purchasing it_.
+
 
 
 end
