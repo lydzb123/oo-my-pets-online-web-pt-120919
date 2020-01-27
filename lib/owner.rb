@@ -61,9 +61,7 @@ class Owner
 
   def list_pets
     print "#{Cat.all } #{Dog.all}"
-
   end
-end
 
 
 
