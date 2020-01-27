@@ -57,10 +57,9 @@ class Owner
     Cat.all
     Dog.all
   end
-  
+
   def sell_pets
-    self.all_pets { |cat| if cat.owner == self
-      cat.mood = "nervous"
+    self.all_pets { |pet| pet.mood = "nervous"
       cat.owner = nil end}
   end
 
