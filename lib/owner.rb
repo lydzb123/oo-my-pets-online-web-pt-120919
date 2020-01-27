@@ -43,6 +43,9 @@ class Owner
     Dog.new(dog_name, owner)
   end
 
+  def walk_dogs
+  end
+
 
 
 
