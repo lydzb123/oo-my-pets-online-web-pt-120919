@@ -53,6 +53,11 @@ class Owner
       cat.mood = "happy" end}
   end
 
+  def all_pets
+    Cat.all
+    Dog.all
+  end
+  
   def sell_pets
     Cat.all.map { |cat| if cat.owner == self
       cat.mood = "nervous"
