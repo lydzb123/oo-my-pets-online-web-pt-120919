@@ -44,8 +44,12 @@ class Owner
   end
 
   def walk_dogs
-    Dog.all.collect {|dog| if dog.owner == self
+    Dog.all.map {|dog| if dog.owner == self
       dog.mood = "happy" end}
+  end
+
+  def feed_cats
+    Cat.all.map
   end
 
 
