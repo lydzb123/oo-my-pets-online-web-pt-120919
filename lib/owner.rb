@@ -54,9 +54,9 @@ class Owner
   end
 
   def sell_pets
-    Cat.all.map { |cat| if cat.owner == self}
+    Cat.all.map { |cat| if cat.owner == self
       cat.mood = "nervous"
-      cat.owner = nil
+      cat.owner = nil }
   end
 
   def list_pets
