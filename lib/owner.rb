@@ -49,7 +49,8 @@ class Owner
   end
 
   def feed_cats
-    Cat.all.map
+    Cat.all.map { |cat| if cat.owner == self
+      cat.mood = "happy" end}
   end
 
 
