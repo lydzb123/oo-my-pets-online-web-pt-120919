@@ -44,7 +44,8 @@ class Owner
   end
 
   def walk_dogs
-    dogs.mood("happy")
+    Dog.all.select {|dog| dog.owner == self }
+    Dog.all.mood("happy")
 
   end
 
