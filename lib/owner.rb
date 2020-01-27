@@ -59,6 +59,10 @@ class Owner
       cat.owner = nil
   end
 
+  def list_pets
+    print "#{Cat.all } #{Dog.all}""
+
+  end
 
 
 
