@@ -60,7 +60,7 @@ class Owner
       cat.owner = nil }
       
     Dog.collect {|dog| dog.mood = "nervous"
-      cat.owner = nil  }
+      dog.owner = nil  }
   end
 
   def list_pets
