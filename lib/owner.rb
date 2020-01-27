@@ -53,10 +53,7 @@ class Owner
       cat.mood = "happy" end}
   end
 
-  def all_pets
-    Cat.all
-    Dog.all
-  end
+
 
   def sell_pets
     self.all_pets.collect { |pet| pet.mood = "nervous"
